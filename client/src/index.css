@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-page: #f7f9fc;
+  --color-card: #ffffff;
+  --color-primary: #2563eb;
+  --color-accent: #0f766e;
+  --color-heading: #17324d;
+  --color-body: #475569;
+  --color-line: #e2e8f0;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f7f9fc;
+  color: #475569;
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #17324d;
+  font-family: 'Source Serif 4', Georgia, serif;
+}

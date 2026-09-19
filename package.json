@@ -1,0 +1,27 @@
+{
+  "name": "unihostel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UniHostel — Multi-Institution Centralized Hostel Management System",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "test": "npm run test -w server && npm run test -w client",
+    "test:server": "npm run test -w server",
+    "test:client": "npm run test -w client",
+    "lint": "npm run lint -w server && npm run lint -w client",
+    "build": "npm run build -w server && npm run build -w client",
+    "seed": "npm run seed -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
