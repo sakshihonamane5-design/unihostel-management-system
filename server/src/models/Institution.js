@@ -18,6 +18,4 @@ const institutionSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-institutionSchema.index({ code: 1 }, { unique: true });
-
 export const Institution = mongoose.model('Institution', institutionSchema);
