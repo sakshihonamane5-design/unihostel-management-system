@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { api } from '../api.js';
-import { useAuth } from '../auth.jsx';
+import { api } from './api.js';
+import { useAuth } from './auth.jsx';
 import { Button } from './components/ui.jsx';
 
 const NAV = [
