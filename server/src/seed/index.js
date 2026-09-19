@@ -62,7 +62,7 @@ export async function seedSpit(env = getEnv()) {
   }
 
   const admin = await upsertUser({
-    email: 'warden@spit.ac.in',
+    email: 'admin@spit.ac.in',
     role: ROLES.ADMIN,
     firstName: 'Hostel',
     lastName: 'Warden',
